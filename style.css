@@ -1,164 +1,185 @@
-*{
+/* Base styles */
+* {
     padding: 0;
     margin: 0;
 }
-hr{
+hr {
     margin: 30px 0;
 }
-body{
+body {
     width: auto;
     background-color: hsl(30, 54%, 90%);
     margin: 130px auto;
 }
-p,h3,ol, ul, td{
+p, h3, ol, ul, td {
     font-family: sans-serif;
 }
-.container{
+.container {
     width: 50%;
     background-color: hsl(0, 0%, 100%);
     margin: auto;
-    border-radius:20px;
+    border-radius: 20px;
     padding: 40px;
-
 }
-.img-omelette{
+.img-omelette {
     max-width: 100%;
     max-height: 100%;
     border-radius: 10px;
     margin-bottom: 20px;
 }
-h1{
+h1 {
     margin: 25px 0;
     color: hsl(24, 5%, 18%);
 }
-h1, h2{
+h1, h2 {
     font-family: serif;
 }
-p{
+p {
     font-size: 16px;
     font-family: sans-serif;
     margin: 25px 0;
     color: hsl(30, 10%, 34%);
-
 }
 /* Preparation Time Styling */
-.preparation-time{
+.preparation-time {
     background-color: hsl(330, 100%, 98%);
     padding: 20px;
     border-radius: 13px;
     line-height: 2.2;
 }
-.preparation-title{
+.preparation-title {
     margin-bottom: 12px;
     color: hsl(332, 51%, 32%);
-
 }
-.preparation-list{
+.preparation-list {
     margin-left: 30px;
 }
-.preparation-list li{
+.preparation-list li {
     padding-left: 20px;
     color: hsl(332, 51%, 32%);
 }
-.preparation-list li span{
+.preparation-list li span {
     color: hsl(30, 10%, 34%);
     font-size: 16px;
-
 }
-
-
-
 /* Ingredients Styling */
-.ingredients{
+.ingredients {
     margin: 25px 0;
     line-height: 2.5;
 }
-.ingredient-title{
+.ingredient-title {
     color: hsl(14, 45%, 36%);
 }
-.ingredients-list{
+.ingredients-list {
     margin-left: 20px;
     color: hsl(30, 10%, 34%);
 }
-
-
-
-
 /* Instructions Styling */
-.instructions{
+.instructions {
     line-height: 1.5;
 }
-.instructions-title{
+.instructions-title {
     color: hsl(14, 45%, 36%);
 }
-.instruction-style li{
+.instruction-style li {
     padding: 5px 0;
     color: hsl(14, 45%, 36%);
 }
-.instruction-style li span{
+.instruction-style li span {
     color: hsl(30, 10%, 34%);
 }
-
-
-
 /* Nutrition Styling */
-.nutrition-title{
+.nutrition-title {
     color: hsl(14, 45%, 36%);
 }
-.nutrition-table td:first-child{
+.nutrition-table td:first-child {
     color: hsl(30, 10%, 34%);
 }
-.nutrition-table td:last-child{
+.nutrition-table td:last-child {
     color: hsl(14, 45%, 36%);
     font-weight: 600;
 }
-.nutrition-table{
+.nutrition-table {
     width: 100%;
     border: none;
-    border-collapse: collapse ;
+    border-collapse: collapse;
     line-height: 2.5;
-    
 }
-.nutrition-table tr{
-    border-bottom: 1px solid hsl(30, 10%, 34%,0.3);
+.nutrition-table tr {
+    border-bottom: 1px solid hsl(30, 10%, 34%, 0.3);
 }
-.nutrition-table tr:first-child{
+.nutrition-table tr:first-child {
     border-top: none;
 }
-.nutrition-table tr:last-child{
+.nutrition-table tr:last-child {
     border-bottom: none;
 }
-
-
-
 /* Links */
-.attribution{
+.attribution {
     background-color: hsl(0, 0%, 100%);
     color: hsl(24, 5%, 18%);
     width: 50%;
     margin: 30px auto;
-    padding :40px;
+    padding: 40px;
     border-radius: 20px;
     text-align: center;
     font-size: 18px;
 }
-
-.frontendmentor-link:link, .frontendmentor-link:visited{
-    color:hsl(14, 45%, 36%) ;
+.frontendmentor-link:link, .frontendmentor-link:visited {
+    color: hsl(14, 45%, 36%);
     text-decoration: none;
 }
-.frontendmentor-link:hover{
+.frontendmentor-link:hover {
+    font-weight: bold;
+    text-decoration: underline;
+}
+.my-link:link, .my-link:visited {
+    color: hsl(14, 45%, 36%);
+    text-decoration: none;
+}
+.my-link:hover {
     font-weight: bold;
     text-decoration: underline;
 }
 
-.my-link:link,.my-link:visited{
-    color:hsl(14, 45%, 36%) ;
-    text-decoration: none;
-}
-.my-link:hover{
-    font-weight: bold;
-    text-decoration: underline;
+/* Media Queries */
+
+/* For tablets and larger mobile devices (screen width ≤ 768px) */
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 80%;
+        padding: 20px;
+    }
+    body {
+        margin: 50px auto;
+    }
+    p {
+        font-size: 14px;
+    }
+    h1 {
+        font-size: 24px;
+    }
+    .img-omelette {
+        max-height: 300px; /* Adjust image height for smaller screens */
+    }
 }
 
-
+/* For mobile devices (screen width ≤ 480px) */
+@media only screen and (max-width: 480px) {
+    .container {
+        width: 90%;
+        padding: 10px;
+    }
+    body {
+        margin: 20px auto;
+    }
+    p {
+        font-size: 12px;
+    }
+    h1 {
+        font-size: 20px;
+    }
+    .img-omelette {
+        max-height: 200px; /* Further adjust image height for small screens */
+    }
+}
