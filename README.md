@@ -1,2 +1,18 @@
-# simple-omelette-recipe
-Simple Omelette Recipe  A clean and responsive web page showcasing a simple omelette recipe. This project features preparation steps, ingredient lists, and nutritional information, all styled using HTML and CSS.
+# Simple Omelette Recipe
+
+A web page that presents a simple omelette recipe with details on preparation time, ingredients, instructions, and nutrition.
+
+## Features
+
+- Recipe overview
+- Preparation time
+- Ingredients list
+- Cooking instructions
+- Nutrition information
+
+## Technologies
+
+- HTML
+- CSS
+
+
