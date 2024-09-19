@@ -147,39 +147,166 @@ p {
 /* For tablets and larger mobile devices (screen width ≤ 768px) */
 @media only screen and (max-width: 768px) {
     .container {
-        width: 80%;
+        width: 100%;
         padding: 20px;
+        border-radius: 0;
     }
     body {
-        margin: 50px auto;
+        margin: 5px auto;
     }
     p {
-        font-size: 14px;
+        font-size: 12px;
     }
     h1 {
-        font-size: 24px;
+        font-size: 35px;
+    }
+    h2 {
+        font-size: 25px;
+    }
+    h3{
+        font-size: 20px;
     }
     .img-omelette {
-        max-height: 300px; /* Adjust image height for smaller screens */
+        max-height: 100%; /* Adjust image height for smaller screens */
+        border-radius: 0;
+        max-width: 100%;
+
+    }
+    .instruction-style{
+        margin-left: 20px;
+    }
+    .attribution{
+        width: 100%;
+    }
+}
+
+/* For mobile devices (screen width ≤ 480px) */
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 20px;
+        border-radius: 0;
+    }
+    body {
+        margin: 5px auto;
+    }
+    p {
+        font-size: 12px;
+    }
+    h1 {
+        font-size: 35px;
+    }
+    h2 {
+        font-size: 25px;
+    }
+    h3{
+        font-size: 20px;
+    }
+    .img-omelette {
+        max-height: 100%; /* Adjust image height for smaller screens */
+        border-radius: 0;
+        max-width: 100%;
+
+    }
+    .instruction-style{
+        margin-left: 20px;
+    }
+    .instruction{
+        margin-bottom: 30px;
+    }
+    .attribution{
+        width: 100%;
+        margin: 5px 0 0 0;
+        border-radius: 0;
+        font-size: 12px;
+        padding: 20px;
+    }
+}
+
+/* For mobile devices (screen width ≤ 480px) */
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 20px;
+        border-radius: 0;
+    }
+    body {
+        margin: 5px auto;
+    }
+    p {
+        font-size: 12px;
+    }
+    h1 {
+        font-size: 35px;
+    }
+    h2 {
+        font-size: 25px;
+    }
+    h3{
+        font-size: 20px;
+    }
+    .img-omelette {
+        max-height: 100%; 
+        border-radius: 0;
+        max-width: 100%;
+
+    }
+    .instruction-style{
+        margin-left: 20px;
+    }
+    .instructions-title{
+        margin-bottom: 15px;
+        line-height: 1.5;
+    }
+    .attribution{
+        width: 100%;
+        margin: 5px 0 0 0;
+        border-radius: 0;
+        font-size: 12px;
+        padding: 20px;
     }
 }
 
 /* For mobile devices (screen width ≤ 480px) */
 @media only screen and (max-width: 480px) {
     .container {
-        width: 90%;
-        padding: 10px;
+        width: 100%;
+        padding: 20px;
+        border-radius: 0;
     }
     body {
-        margin: 20px auto;
+        margin: 5px auto;
     }
     p {
         font-size: 12px;
     }
     h1 {
+        font-size: 30px;
+    }
+    h2 {
+        font-size: 25px;
+    }
+    h3{
         font-size: 20px;
     }
+    .instruction-style{
+        margin-left: 20px;
+    }
+    .instructions-title{
+        margin-bottom: 15px;
+        line-height: 1.5;
+    }
+
     .img-omelette {
-        max-height: 200px; /* Further adjust image height for small screens */
+        max-height: 100%; 
+        max-width: 100%;
+        border-radius: 0;
+    }
+    .attribution{
+        width: 100%;
+        margin: 5px 0 0 0;
+        border-radius: 0;
+        font-size: 12px;
+        padding: 20px;
     }
 }
